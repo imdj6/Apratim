@@ -17,6 +17,18 @@ function HomePage() {
                     <p className='text-4xl ml-5 tracking-[2px] mx-auto leading-relaxed'>Apratim</p>
                     <p className='text-4xl ml-5 tracking-[2px] leading-relaxed'>is finally here.</p>
                 </div>
+                <div className='mt-5 space-x-5 ml-5'>
+                    <Button buttonText="Register"
+                        active
+                        icon={AiOutlineUserAdd} />
+                    <Button
+                        buttonText="Login"
+                        icon={AiOutlineLogin}
+                    />
+                </div>
+                <div className='text-sm ml-5 mt-5'>
+                    Already registered with fun and excitement? <span className='text-[#8F00FF] cursor-pointer ml-1'>Login.</span>
+                </div>
             </div>
             <div className='w-1/2 bg-[#fffdde] flex-col'>
                 <div className='flex space-x-10 mt-5 justify-end mr-10'>
