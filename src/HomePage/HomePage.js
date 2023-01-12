@@ -10,12 +10,12 @@ function HomePage() {
     return (
         <div className='flex'>
             <div className='w-1/2 bg-[#fcfcfc]'>
-                <div className=' ml-5 flex space-x-10 items-center'>
-                    <div><img src={Logo} className='h-24' alt='' /></div>
-                    <div>Schedule</div>
-                    <div>Events</div>
-                    <div>Sponsors</div>
-                    <div>Contact us</div>
+                <div className=' ml-5 flex space-x-16 items-center'>
+                    <div className='cursor-pointer'><img src={Logo} className='h-24' alt='' /></div>
+                    <div className='cursor-pointer'>Schedule</div>
+                    <div className='cursor-pointer'>Events</div>
+                    <div className='cursor-pointer'>Sponsors</div>
+                    <div className='cursor-pointer'>Contact us</div>
                 </div>
                 <div className='flex-col mt-5  items-center'>
                     {/* <span className='text-4xl mt-14 leading-relaxed p-5  mx-auto bg-polygon1 bg-cover'>So,</span>
