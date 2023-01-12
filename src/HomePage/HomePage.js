@@ -1,37 +1,49 @@
 import React from 'react'
 import Button from '../UIComponents/Button'
-import { AiOutlineLogin, AiOutlineUserAdd } from 'react-icons/ai'
+import { AiOutlineLogin, AiOutlineUserAdd, AiFillSchedule } from 'react-icons/ai'
+import image from '../../src/assests/Illustration.png'
+import heading from '../assests/heading.png'
+import Logo from '../assests/logo.png'
+import Polygon1 from '../assests/Polygon1.png'
+import Polygon2 from '../assests/Polygon2.png'
 function HomePage() {
     return (
         <div className='flex'>
-            <div className='w-1/2 bg-[#fcfcfc] h-96'>
-                <div className='mt-5 ml-5 flex space-x-10'>
-                    <div>Logo</div>
-                    <div>Home</div>
-                    <div>Color</div>
-                    <div>Hpem</div>
-                    <div>Hwiw</div>
+            <div className='w-1/2 bg-[#fcfcfc]'>
+                <div className=' ml-5 flex space-x-10 items-center'>
+                    <div><img src={Logo} className='h-24' alt='' /></div>
+                    <div>Schedule</div>
+                    <div>Events</div>
+                    <div>Sponsors</div>
+                    <div>Contact us</div>
                 </div>
-                <div className='flex-col'>
-                    <p className='text-4xl mt-14 ml-5 leading-relaxed mx-auto'>So, what are you waiting for?</p>
-                    <p className='text-4xl ml-5 tracking-[2px] mx-auto leading-relaxed'>Apratim</p>
-                    <p className='text-4xl ml-5 tracking-[2px] leading-relaxed'>is finally here.</p>
+                <div className='flex-col mt-5  items-center'>
+                    {/* <span className='text-4xl mt-14 leading-relaxed p-5  mx-auto bg-polygon1 bg-cover'>So,</span>
+                    <span className='text-4xl mt-14 leading-relaxed p-5 mx-auto'>what are you waiting for?</span>
+                    <p className='text-5xl  tracking-[2px] mx-auto leading-relaxed'>Apratim</p>
+                    <span className='text-4xl  tracking-[2px] leading-relaxed mt-2 mb-2 '>is</span>
+                    <span className='text-4xl  tracking-[2px] leading-relaxed mt-2 mb-2 text-[#8F00FF] bg-Vector bg-cover'> finally </span> */}
+                    <img src={Polygon1} className='object-contain z-0 absolute top-24 ml-1'/>
+                    <img src={heading} alt='apratim' className='z-20 ml-10'/>
+                    {/* <span className='bg-Polygon2 bg-cover text-4xl p-3 tracking-[2px] leading-relaxed mt-2 mb-2'>here.</span> */}
+                    <img src={Polygon2} className='object-contain z-0 absolute top-96 left-96 '/>
+
                 </div>
-                <div className='mt-5 space-x-5 ml-5'>
+                <div className='mt-12 space-x-5 ml-10'>
                     <Button buttonText="Register"
                         active
                         icon={AiOutlineUserAdd} />
                     <Button
-                        buttonText="Login"
-                        icon={AiOutlineLogin}
+                        buttonText="Get Schedule"
+                        icon={AiFillSchedule}
                     />
                 </div>
-                <div className='text-sm ml-5 mt-5'>
+                <div className='text-sm ml-10 mt-5 '>
                     Already registered with fun and excitement? <span className='text-[#8F00FF] cursor-pointer ml-1'>Login.</span>
                 </div>
             </div>
-            <div className='w-1/2 bg-[#fffdde] flex-col'>
-                <div className='flex space-x-10 mt-5 justify-end mr-10'>
+            <div className='w-1/2 bg-[#fffdde] flex-col '>
+                <div className='flex space-x-10 mt-8 justify-end mr-10 mb-10'>
                     <Button buttonText="Register"
                         active
                         icon={AiOutlineUserAdd} />
@@ -40,7 +52,9 @@ function HomePage() {
                         icon={AiOutlineLogin}
                     />
                 </div>
-                <div></div>
+                <div>
+                    <img src={image} alt='apratim' />
+                </div>
             </div>
         </div>
     )
