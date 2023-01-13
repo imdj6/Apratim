@@ -6,6 +6,7 @@ import heading from '../assests/heading.png'
 import Logo from '../assests/logo.png'
 import Polygon1 from '../assests/Polygon1.png'
 import Polygon2 from '../assests/Polygon2.png'
+import Technical from '../assests/technical.png'
 function HomePage() {
     return (
         <>
@@ -64,6 +65,45 @@ function HomePage() {
             {/* teaser section */}
             <section className='container mx-auto py-20'>
                 <iframe width="560" height="315" className='w-full h-[70vh]' src="https://www.youtube-nocookie.com/embed/rTePr8GptH0?controls=0" title="Apratim" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </section>
+            <section className='container mx-auto mb-20'>
+                {/* heading */}
+                <div className='mb-10'>
+                    <span className='font-poppins text-5xl'>Events</span>
+                    {/* bigger line */}
+                    <span className='block bg-lineRed w-[8rem] h-2 rounded-[18px]'></span>
+                    {/* smaller line */}
+                    <span className='block bg-lineGreen w-20 h-2 rounded-[18px] mt-1'></span>
+                </div>
+                <div className='flex gap-x-[8.5vw]'>
+                    <div className='relative rounded-[18px] bg-boxCyan p-10 pt-6 w-[20vw] h-[52vh]'>
+                        <img className='absolute right-[-4vw]' src={Technical} alt="Technical events" />
+                        {/* heading */}
+                        <span className='absolute font-bebasNeue text-6xl bottom-[12vh]'>TECHNICAL</span>
+                        {/* paragraph */}
+                        <p className='font-sourceCodePro absolute bottom-[2vh] text-[1.3rem] pr-10'>
+                            Events related to programming and hardware.
+                        </p>
+                    </div>
+                    <div className='relative rounded-[18px] bg-boxPink p-10 pt-6 w-[20vw] h-[52vh]'>
+                        <img className='absolute right-[-4vw]' src={Technical} alt="Technical events" />
+                        {/* heading */}
+                        <span className='absolute font-bebasNeue text-6xl bottom-[12vh]'>CULTURAL</span>
+                        {/* paragraph */}
+                        <p className='font-sourceCodePro absolute text-[1.3rem] bottom-[5vh] pr-10'>
+                            Lorem ipsum dolor sit amet consectetur.
+                        </p>
+                    </div>
+                    <div className='relative rounded-[18px] bg-boxBlue p-10 pt-6 w-[20vw] h-[52vh]'>
+                        <img className='absolute right-[-4vw]' src={Technical} alt="Technical events" />
+                        {/* heading */}
+                        <span className='absolute font-bebasNeue text-6xl bottom-[12vh]'>LITERARY</span>
+                        {/* paragraph */}
+                        <p className='font-sourceCodePro absolute bottom-[5vh] text-[1.3rem] pr-10'>
+                            Lorem ipsum dolor sit amet consectetur.
+                        </p>
+                    </div>
+                </div>
             </section>
         </>
     )
