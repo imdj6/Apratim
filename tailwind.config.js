@@ -26,7 +26,8 @@ module.exports = {
         'Polygon2': "url('/src/assests/Polygon2.png')",
         'Vector':"url('/src/assests/Vector1.png')",
         // Events in home page images
-        'technical': "url('/src/assets/technical.png')"
+        'technical': "url('/src/assets/technical.png')",
+        'cultural': "url('/src/assests/cultural.png')"
       }
     },
   },

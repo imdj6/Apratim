@@ -6,7 +6,9 @@ import heading from '../assests/heading.png'
 import Logo from '../assests/logo.png'
 import Polygon1 from '../assests/Polygon1.png'
 import Polygon2 from '../assests/Polygon2.png'
+// events images
 import Technical from '../assests/technical.png'
+import Cultural from '../assests/cultural.png'
 function HomePage() {
     return (
         <>
@@ -86,7 +88,7 @@ function HomePage() {
                         </p>
                     </div>
                     <div className='relative rounded-[18px] bg-boxPink p-10 pt-6 w-[20vw] h-[52vh]'>
-                        <img className='absolute right-[-4vw]' src={Technical} alt="Technical events" />
+                        <img className='absolute right-[-4vw]' src={Cultural} alt="Cultural events" />
                         {/* heading */}
                         <span className='absolute font-bebasNeue text-6xl bottom-[12vh]'>CULTURAL</span>
                         {/* paragraph */}
@@ -95,7 +97,7 @@ function HomePage() {
                         </p>
                     </div>
                     <div className='relative rounded-[18px] bg-boxBlue p-10 pt-6 w-[20vw] h-[52vh]'>
-                        <img className='absolute right-[-4vw]' src={Technical} alt="Technical events" />
+                        <img className='absolute right-[-4vw]' src={Technical} alt="Literary events" />
                         {/* heading */}
                         <span className='absolute font-bebasNeue text-6xl bottom-[12vh]'>LITERARY</span>
                         {/* paragraph */}
@@ -104,6 +106,23 @@ function HomePage() {
                         </p>
                     </div>
                 </div>
+            </section>
+            <section className='container mx-auto'>
+                {/* heading */}
+                <div className='mb-10'>
+                    <span className='font-poppins text-5xl'>Sponsors</span>
+                    {/* bigger line */}
+                    <span className='block bg-lineRed w-[8rem] h-2 rounded-[18px]'></span>
+                    {/* smaller line */}
+                    <span className='block bg-lineGreen w-20 h-2 rounded-[18px] mt-1'></span>
+                </div>
+                {/* title sponsor */}
+                <div>
+                    <span className='font-poppins'>Our title sponsor</span>
+                    <div>
+
+                    </div>
+                </sp>
             </section>
         </>
     )
