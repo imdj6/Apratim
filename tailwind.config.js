@@ -32,7 +32,11 @@ module.exports = {
         'technical': "url('/src/assets/technical.png')",
         'cultural': "url('/src/assests/cultural.png')",
         // Sponsors in home page images
-        'titleSponsor': "url('/src/assests/titleSponsor.png')"
+        'titleSponsor': "url('/src/assests/titleSponsor.png')",
+        // Watermark images in home page
+        'TriangleWatermark': "url('/src/assests/triangleWatermark.svg')",
+        'CircularWatermark': "url('/src/assests/circularWatermark.svg')",
+        'StarWatermark': "url('/src/assests/starWatermark.svg')"
       }
     },
   },

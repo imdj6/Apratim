@@ -11,6 +11,10 @@ import Technical from '../assests/technical.png'
 import Cultural from '../assests/cultural.png'
 // sponsors images
 import TitleSponsor from '../assests/titleSponsor.png'
+// watermark images
+import TriangleWatermark from '../assests/triangleWatermark.svg'
+import CircularWatermark from '../assests/circularWatermark.svg'
+import StarWatermark from '../assests/starWatermark.svg'
 function HomePage() {
     return (
         <>
@@ -67,9 +71,13 @@ function HomePage() {
                 </div>
             </section>
             {/* teaser section */}
-            <section className='container mx-auto py-20'>
+            <section className='container mx-auto py-20 relative'>
+                {/* triangle watermark starts */}
+                <img src={TriangleWatermark} className="z-[-1] absolute left-[-10vw] top-[-25vh]" alt="" />
+                {/* triangle watermark ends */}
                 <iframe width="560" height="315" className='w-full h-[70vh]' src="https://www.youtube-nocookie.com/embed/rTePr8GptH0?controls=0" title="Apratim" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </section>
+            {/* events section */}
             <section className='container mx-auto mb-20'>
                 {/* heading */}
                 <div className='mb-10'>
@@ -109,7 +117,13 @@ function HomePage() {
                     </div>
                 </div>
             </section>
-            <section className='container mx-auto mb-20'>
+            {/* circular watermark starts */}
+            <div className='relative block w-full h-full'>
+                <img src={CircularWatermark} className="z-[-1] absolute top-[-25vh] right-0" alt="" />
+            </div>
+            {/* circular watermark ends */}
+            {/* sponsors section */}
+            <section className='relative container mx-auto mb-20'>
                 {/* heading */}
                 <div className='mb-10'>
                     <span className='font-poppins text-5xl'>Sponsors</span>
@@ -121,7 +135,7 @@ function HomePage() {
                 {/* title sponsor */}
                 <div className='mb-8'>
                     <span className='font-poppins block text-center mb-8 text-2xl'>Our title sponsor</span>
-                    <div className='container mx-auto w-[20vw] h-[35vh] p-10 shadow-sponsors rounded-[18px]'>
+                    <div className='container bg-white mx-auto w-[20vw] h-[35vh] p-10 shadow-sponsors rounded-[18px]'>
                         <img src={TitleSponsor} className="w-full h-full" alt="Title Sponsor" />
                     </div>
                 </div>
@@ -130,15 +144,20 @@ function HomePage() {
                     <span className='font-poppins text-2xl block text-center mb-8'>Other sponsors</span>
                     {/* other sponsor boxes */}
                     <div className='container mx-auto flex gap-x-[4vw]'>
-                        <div className='w-[10vw] h-[18vh] p-10 shadow-sponsors rounded-[18px]'></div>
-                        <div className='w-[10vw] h-[18vh] p-10 shadow-sponsors rounded-[18px]'></div>
-                        <div className='w-[10vw] h-[18vh] p-10 shadow-sponsors rounded-[18px]'></div>
-                        <div className='w-[10vw] h-[18vh] p-10 shadow-sponsors rounded-[18px]'></div>
-                        <div className='w-[10vw] h-[18vh] p-10 shadow-sponsors rounded-[18px]'></div>
-                        <div className='w-[10vw] h-[18vh] p-10 shadow-sponsors rounded-[18px]'></div>
+                        <div className='bg-white w-[10vw] h-[18vh] p-10 shadow-sponsors rounded-[18px]'></div>
+                        <div className='bg-white w-[10vw] h-[18vh] p-10 shadow-sponsors rounded-[18px]'></div>
+                        <div className='bg-white w-[10vw] h-[18vh] p-10 shadow-sponsors rounded-[18px]'></div>
+                        <div className='bg-white w-[10vw] h-[18vh] p-10 shadow-sponsors rounded-[18px]'></div>
+                        <div className='bg-white w-[10vw] h-[18vh] p-10 shadow-sponsors rounded-[18px]'></div>
+                        <div className='bg-white w-[10vw] h-[18vh] p-10 shadow-sponsors rounded-[18px]'></div>
                     </div>
                 </div>
             </section>
+            {/* star watermark starts */}
+            <div className='relative block w-full h-full'>
+                <img src={StarWatermark} className="z-[-1] absolute top-[-55vh] left-0" alt="" />
+            </div>
+            {/* star watermark ends */}
         </>
     )
 }
