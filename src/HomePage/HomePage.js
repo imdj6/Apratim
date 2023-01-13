@@ -122,7 +122,7 @@ function HomePage() {
                     <div>
 
                     </div>
-                </sp>
+                </div>
             </section>
         </>
     )
