@@ -12,6 +12,9 @@ module.exports = {
       'sourceCodePro': ['Source Code Pro']
     },
     extend: {
+      boxShadow: {
+        'sponsors': '0px 4px 16px 5px rgba(0, 0, 0, 0.25)'
+      },
       colors: {
         // Heading line colors
         'lineRed': '#FF0000',
@@ -27,7 +30,9 @@ module.exports = {
         'Vector':"url('/src/assests/Vector1.png')",
         // Events in home page images
         'technical': "url('/src/assets/technical.png')",
-        'cultural': "url('/src/assests/cultural.png')"
+        'cultural': "url('/src/assests/cultural.png')",
+        // Sponsors in home page images
+        'titleSponsor': "url('/src/assests/titleSponsor.png')"
       }
     },
   },

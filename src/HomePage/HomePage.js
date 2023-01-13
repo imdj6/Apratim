@@ -9,6 +9,8 @@ import Polygon2 from '../assests/Polygon2.png'
 // events images
 import Technical from '../assests/technical.png'
 import Cultural from '../assests/cultural.png'
+// sponsors images
+import TitleSponsor from '../assests/titleSponsor.png'
 function HomePage() {
     return (
         <>
@@ -107,7 +109,7 @@ function HomePage() {
                     </div>
                 </div>
             </section>
-            <section className='container mx-auto'>
+            <section className='container mx-auto mb-20'>
                 {/* heading */}
                 <div className='mb-10'>
                     <span className='font-poppins text-5xl'>Sponsors</span>
@@ -117,10 +119,23 @@ function HomePage() {
                     <span className='block bg-lineGreen w-20 h-2 rounded-[18px] mt-1'></span>
                 </div>
                 {/* title sponsor */}
+                <div className='mb-8'>
+                    <span className='font-poppins block text-center mb-8 text-2xl'>Our title sponsor</span>
+                    <div className='container mx-auto w-[20vw] h-[35vh] p-10 shadow-sponsors rounded-[18px]'>
+                        <img src={TitleSponsor} className="w-full h-full" alt="Title Sponsor" />
+                    </div>
+                </div>
+                {/* other sponsors */}
                 <div>
-                    <span className='font-poppins'>Our title sponsor</span>
-                    <div>
-
+                    <span className='font-poppins text-2xl block text-center mb-8'>Other sponsors</span>
+                    {/* other sponsor boxes */}
+                    <div className='container mx-auto flex gap-x-[4vw]'>
+                        <div className='w-[10vw] h-[18vh] p-10 shadow-sponsors rounded-[18px]'></div>
+                        <div className='w-[10vw] h-[18vh] p-10 shadow-sponsors rounded-[18px]'></div>
+                        <div className='w-[10vw] h-[18vh] p-10 shadow-sponsors rounded-[18px]'></div>
+                        <div className='w-[10vw] h-[18vh] p-10 shadow-sponsors rounded-[18px]'></div>
+                        <div className='w-[10vw] h-[18vh] p-10 shadow-sponsors rounded-[18px]'></div>
+                        <div className='w-[10vw] h-[18vh] p-10 shadow-sponsors rounded-[18px]'></div>
                     </div>
                 </div>
             </section>
