@@ -36,7 +36,7 @@ module.exports = {
         // Watermark images in home page
         'TriangleWatermark': "url('/src/assests/triangleWatermark.svg')",
         'CircularWatermark': "url('/src/assests/circularWatermark.svg')",
-        'StarWatermark': "url('/src/assests/starWatermark.svg')"
+        'StarWatermark': "url('/src/assests/starWatermark.svg')",
       }
     },
   },

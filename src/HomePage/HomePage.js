@@ -19,6 +19,7 @@ import Sponsor2 from '../assests/sponsor2.svg'
 import TriangleWatermark from '../assests/triangleWatermark.svg'
 import CircularWatermark from '../assests/circularWatermark.svg'
 import StarWatermark from '../assests/starWatermark.svg'
+import Footer from '../Components/Footer'
 function HomePage() {
     return (
         <>
@@ -173,6 +174,40 @@ function HomePage() {
                 <img src={StarWatermark} className="z-[-1] absolute top-[-55vh] left-0" alt="" />
             </div>
             {/* star watermark ends */}
+
+            {/* About section start */}
+            <section className='relative container mx-auto mb-20 px-2 md:px-20'>
+            <div className='mb-10'>
+                    <span className='font-poppins text-5xl'>About</span>
+                    {/* bigger line */}
+                    <span className='block bg-lineRed w-[8rem] h-2 rounded-[18px]'></span>
+                    {/* smaller line */}
+                    <span className='block bg-lineGreen w-20 h-2 rounded-[18px] mt-1'></span>
+            </div>
+            <div className='font-poppins text-lg p-4 font-medium'>
+            Lorem ipsum dolor sit amet consectetur. Sed lectus ornare velit imperdiet. Etiam aliquam nibh amet risus ullamcorper ultrices imperdiet. Proin vitae mauris urna auctor scelerisque. Tristique mauris ultricies tempor tincidunt etiam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem odio nemo totam? Quisquam eveniet sequi fuga dignissimos delectus nihil dolorum quia tempora nostrum numquam.
+            </div>
+            </section>
+            {/* About section end */}
+            {/* schedule section starts */}
+
+            {/* <section className='relative container mx-auto mb-20 px-2 md:px-20'> */}
+
+            {/* </section> */}
+            <div className='flex'>
+            <hr className='w-1/2 bg-lineRed h-2 rounded-[18px] mb-1'/>
+            <hr className='w-1/2 bg-lineGreen h-2 rounded-[18px] mb-1'/>
+            </div>
+            <div className='flex mb-40'>
+            <hr className='w-1/2 bg-lineGreen h-2 rounded-[18px] mb-10'/>
+            <hr className='w-1/2 bg-lineRed h-2 rounded-[18px] mb-10'/>
+            </div>
+
+            {/* schedule section ends */}
+
+            {/* Footer section start */}
+            <Footer/>
+            {/* Footer Section end */}
         </>
     )
 }
