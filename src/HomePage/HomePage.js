@@ -1,10 +1,10 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Button from '../UIComponents/Button'
 import { AiOutlineLogin, AiOutlineUserAdd, AiFillSchedule } from 'react-icons/ai'
 import image from '../../src/assests/Illustration.png'
 import heading from '../assests/heading.png'
 import Logo from '../assests/logo.png'
-import Navbar from '../../src/Components/Navbar.js'
+import Navbar from '../../src/Components/Navbar.jsx'
 import Polygon1 from '../assests/Polygon1.png'
 import Polygon2 from '../assests/Polygon2.png'
 // events images
@@ -20,7 +20,12 @@ import TriangleWatermark from '../assests/triangleWatermark.svg'
 import CircularWatermark from '../assests/circularWatermark.svg'
 import StarWatermark from '../assests/starWatermark.svg'
 import Footer from '../Components/Footer'
+import Aos from 'aos';
+import "aos/dist/aos.css";
 function HomePage() {
+    useEffect (() => {
+        Aos.init({ duration: 800});
+    }, []);
     return (
         <>
             {/* Mobile responsive nav */}
@@ -78,7 +83,7 @@ function HomePage() {
                 </div>
             </section>
             {/* teaser section */}
-            <section className='container px-2 md:px-20 py-20 relative'>
+            <section data-aos="fade-up" className='container px-2 md:px-20 py-20 relative'>
                 {/* triangle watermark starts */}
                 <img src={TriangleWatermark} className="z-[-1] absolute left-[-10vw] top-[-25vh]" alt="" />
                 {/* triangle watermark ends */}
@@ -95,9 +100,9 @@ function HomePage() {
                     <span className='block bg-lineGreen w-20 h-2 rounded-[18px] mt-1'></span>
                 </div>
                 <div className='flex flex-col gap-x-[8.5vw] ml-0 md:ml-20 lg:flex-row px-2 lg:px-0'>
-                    <div className='relative rounded-[18px] bg-boxCyan p-10 pt-6 w-[85vw] h-[70vh] lg:w-[20vw]  lg:h-[52vh]
+                    <div data-aos="fade-right" className='relative rounded-[18px] bg-boxCyan p-10 pt-6 w-[85vw] h-[70vh] lg:w-[20vw]  lg:h-[52vh]
                     cursor-pointer'>
-                        <img className='absolute right-[-10vw] lg:right-[-5vw]' src={Technical} alt="Technical events" />
+                        <img data-aos="fade-right" data-aos-duration="2000" className='absolute right-[-10vw] lg:right-[-5vw]' src={Technical} alt="Technical events" />
                         {/* heading */}
                         <span className='absolute font-bebasNeue text-6xl bottom-[12vh]'>TECHNICAL</span>
                         {/* paragraph */}
@@ -105,9 +110,9 @@ function HomePage() {
                             Events related to programming and hardware.
                         </p>
                     </div>
-                    <div className='relative rounded-[18px] bg-boxPink p-10 pt-6 w-[85vw] h-[70vh] lg:w-[20vw] lg:h-[52vh]
+                    <div data-aos="fade-right" className='relative rounded-[18px] bg-boxPink p-10 pt-6 w-[85vw] h-[70vh] lg:w-[20vw] lg:h-[52vh]
                     mt-10 lg:mt-0 cursor-pointer'>
-                        <img className='absolute right-[-10vw] lg:right-[-5vw]' src={Cultural} alt="Cultural events" />
+                        <img data-aos="fade-right" data-aos-duration="2000" className='absolute right-[-10vw] lg:right-[-5vw]' src={Cultural} alt="Cultural events" />
                         {/* heading */}
                         <span className='absolute font-bebasNeue text-6xl bottom-[12vh]'>CULTURAL</span>
                         {/* paragraph */}
@@ -115,9 +120,9 @@ function HomePage() {
                             Lorem ipsum dolor sit amet consectetur.
                         </p>
                     </div>
-                    <div className='relative rounded-[18px] bg-boxBlue p-10 pt-6 w-[85vw] h-[70vh] lg:w-[20vw] lg:h-[52vh]
+                    <div data-aos="fade-right" className='relative rounded-[18px] bg-boxBlue p-10 pt-6 w-[85vw] h-[70vh] lg:w-[20vw] lg:h-[52vh]
                     mt-10 lg:mt-0 cursor-pointer'>
-                        <img className='absolute right-[-10vw] lg:right-[-5vw]' src={Technical} alt="Literary events" />
+                        <img data-aos="fade-right" data-aos-duration="2000" className='absolute right-[-10vw] lg:right-[-5vw]' src={Technical} alt="Literary events" />
                         {/* heading */}
                         <span className='absolute font-bebasNeue text-6xl bottom-[12vh]'>LITERARY</span>
                         {/* paragraph */}
