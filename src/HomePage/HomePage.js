@@ -23,8 +23,8 @@ import Footer from '../Components/Footer'
 import Aos from 'aos';
 import "aos/dist/aos.css";
 function HomePage() {
-    useEffect (() => {
-        Aos.init({ duration: 800});
+    useEffect(() => {
+        Aos.init({ duration: 800 });
     }, []);
     return (
         <>
@@ -47,10 +47,10 @@ function HomePage() {
                         <p className='text-5xl  tracking-[2px] mx-auto leading-relaxed'>Apratim</p>
                         <span className='text-4xl  tracking-[2px] leading-relaxed mt-2 mb-2 '>is</span>
                         <span className='text-4xl  tracking-[2px] leading-relaxed mt-2 mb-2 text-[#8F00FF] bg-Vector bg-cover'> finally </span> */}
-                        <img src={Polygon1} className='object-contain z-0 absolute lg:top-24 lg:ml-1 top-14 left-2' alt='apratim'/>
+                        <img src={Polygon1} className='object-contain z-0 absolute lg:top-24 lg:ml-1 top-14 left-2' alt='apratim' />
                         <img src={heading} alt='apratim' className='z-20 ml-10 lg:w-auto w-80' />
                         {/* <span className='bg-Polygon2 bg-cover text-4xl p-3 tracking-[2px] leading-relaxed mt-2 mb-2'>here.</span> */}
-                        <img src={Polygon2} className='object-contain z-0 absolute lg:top-96 lg:left-96 top-48 right-24' alt='apratim'/>
+                        <img src={Polygon2} className='object-contain z-0 absolute lg:top-96 lg:left-96 top-48 right-24' alt='apratim' />
 
                     </div>
                     <div className='mt-12 space-x-5 ml-10'>
@@ -182,16 +182,16 @@ function HomePage() {
 
             {/* About section start */}
             <section className='relative container mx-auto mb-20 px-2 md:px-20'>
-            <div className='mb-10'>
+                <div className='mb-10'>
                     <span className='font-poppins text-5xl'>About</span>
                     {/* bigger line */}
                     <span className='block bg-lineRed w-[8rem] h-2 rounded-[18px]'></span>
                     {/* smaller line */}
                     <span className='block bg-lineGreen w-20 h-2 rounded-[18px] mt-1'></span>
-            </div>
-            <div className='font-poppins text-lg p-4 font-medium'>
-            Lorem ipsum dolor sit amet consectetur. Sed lectus ornare velit imperdiet. Etiam aliquam nibh amet risus ullamcorper ultrices imperdiet. Proin vitae mauris urna auctor scelerisque. Tristique mauris ultricies tempor tincidunt etiam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem odio nemo totam? Quisquam eveniet sequi fuga dignissimos delectus nihil dolorum quia tempora nostrum numquam.
-            </div>
+                </div>
+                <div className='font-poppins text-lg p-4 font-medium'>
+                    Lorem ipsum dolor sit amet consectetur. Sed lectus ornare velit imperdiet. Etiam aliquam nibh amet risus ullamcorper ultrices imperdiet. Proin vitae mauris urna auctor scelerisque. Tristique mauris ultricies tempor tincidunt etiam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem odio nemo totam? Quisquam eveniet sequi fuga dignissimos delectus nihil dolorum quia tempora nostrum numquam.
+                </div>
             </section>
             {/* About section end */}
             {/* schedule section starts */}
@@ -200,18 +200,18 @@ function HomePage() {
 
             {/* </section> */}
             <div className='flex'>
-            <hr className='w-1/2 bg-lineRed h-2 rounded-[18px] mb-1'/>
-            <hr className='w-1/2 bg-lineGreen h-2 rounded-[18px] mb-1'/>
+                <hr className='w-1/2 bg-lineRed h-2 rounded-[18px] mb-1' />
+                <hr className='w-1/2 bg-lineGreen h-2 rounded-[18px] mb-1' />
             </div>
             <div className='flex mb-40'>
-            <hr className='w-1/2 bg-lineGreen h-2 rounded-[18px] mb-10'/>
-            <hr className='w-1/2 bg-lineRed h-2 rounded-[18px] mb-10'/>
+                <hr className='w-1/2 bg-lineGreen h-2 rounded-[18px] mb-10' />
+                <hr className='w-1/2 bg-lineRed h-2 rounded-[18px] mb-10' />
             </div>
 
             {/* schedule section ends */}
 
             {/* Footer section start */}
-            <Footer/>
+            <Footer />
             {/* Footer Section end */}
         </>
     )

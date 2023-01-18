@@ -31,13 +31,13 @@ const Navbar = () => {
     <section className='flex justify-between lg:hidden bg-[#fcfcfc] pb-5 pt-2 items-center'>
         <Container>
             <div className='flex mt-5'>
-                <div className='pl-3 flex space-x-1 mr-3'>
+                <div className='pl-3 flex space-x-8 mr-3'>
                     <AiFillYoutube color='#762AE2' size={40} />
                     <AiFillInstagram color='#762AE2' size={40}/>
                 </div>
-                <div className='flex space-x-5 mr-8'>
-                    <Button buttonText="Register" active icon={AiOutlineUserAdd} />
-                    <Button buttonText="Login" icon={AiOutlineLogin}/>
+                <div className='flex space-x-5 mr-2'>
+                    {/* <Button buttonText="Register" active icon={AiOutlineUserAdd} /> */}
+                    {/* <Button buttonText="Login" icon={AiOutlineLogin}/> */}
                 </div>
             </div>
         </Container>
