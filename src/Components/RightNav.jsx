@@ -87,13 +87,32 @@ const Ul = styled.ul`
 
 `;
 
-const RightNav = ({ open }) => {
+
+const RightNav = ({ open,setOpen }) => {
+  const handleClickScrollSponsor = () => {
+    const element = document.getElementById('sponsor-section');
+    if (element) {
+        // 👇 Will scroll smoothly to the top of the next section
+        element.scrollIntoView({ behavior: 'smooth' });
+    }
+    setOpen(false);
+};
+const handleClickScrollEvent = () => {
+    const element = document.getElementById('event-section');
+    if (element) {
+        // 👇 Will scroll smoothly to the top of the next section
+        element.scrollIntoView({ behavior: 'smooth' });
+    }
+    setOpen(false);
+};
+
+
   return (
     <section className='bg'>
         <Ul open={open}>
             <li>Schedule</li>
-            <li>Events</li>
-            <li>Sponsors</li>
+            <li onClick={handleClickScrollEvent}>Events</li>
+            <li onClick={handleClickScrollSponsor}>Sponsors</li>
             <li>Contact us</li>
             <Button buttonText="Get Schedule" icon={AiFillSchedule}/>
         </Ul>
