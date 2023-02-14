@@ -3,12 +3,15 @@ import styled from 'styled-components';
 import { AiOutlineLogin, AiOutlineUserAdd, AiFillSchedule } from 'react-icons/ai';
 import Button from '../UIComponents/Button';
 
+
+
 const Ul = styled.ul`
   list-style: none;
   display: flex;
   flex-flow: row nowrap;
   margin-top: 0px;
-  padding-top: 0px;
+  padding-top: 0rem;
+  background-color: transparent;
 
   li {
     padding: 18px;
@@ -17,23 +20,23 @@ const Ul = styled.ul`
   }
 
   @media (max-width: 1350px){
-    background-color: white;
-    flex-flow: column nowrap;
     position: fixed;
+    background-color: white;
+    flex-flow: column wrap;
     transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
     top: 0;
     right: 0;
-    margin-top: 7rem;
     box-shadow: 0px 2px 4px #d4d4ff;
     border-top-left-radius: 12px;
     border-bottom-left-radius: 12px;
     width: 300px;
-    padding-top: 1rem;
+    padding-top: 4rem;
     transition: transform 0.3s ease-in-out;
     height: 100%;
   }
 
   li {
+    padding-left: 5px;
     margin-left: 20px;
     border-bottom: 2px solid #EEEDE7;
     transition: 0.5s;
@@ -46,45 +49,20 @@ const Ul = styled.ul`
     transform: scale(1.1);
   }
 
-.button {
-    display: inline-flex;
-    font-size: 22px;
-    font-weight: 500;
-    padding: 18px;
-    padding-bottom: 44px;
-    align-items: center;
-    justify-content: center;
-    width: auto;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out; 
-    width: 252px;
-}
+  .login {
+  background-color: blue;
+  margin-bottom: 20px;
+  }
 
-.button:hover {
-    transform: scale(0.95);
-    box-shadow: none;
-}
+  .button{
+    margin-bottom: 20px;
+    margin-left: 0px;
+    margin-right: 30px;
+  }
 
-.icon {
-  margin-left: 0px;
-  margin-right: 15px;
-  height: 30px;
-  width: 22px;
-}
-
-.cta-button {
-  background-color: transparent;
-  color: #0960BA;
-  box-shadow: none;
-}
-
-.active-button {
-  background: linear-gradient(#0D95D3,#0960BA);
-  color: #fff;
-}
-
+  button.button.cta-button{
+    margin-left: 0px;
+  }
 `;
 
 
@@ -114,7 +92,15 @@ const handleClickScrollEvent = () => {
             <li onClick={handleClickScrollEvent}>Events</li>
             <li onClick={handleClickScrollSponsor}>Sponsors</li>
             <li>Contact us</li>
-            <Button buttonText="Get Schedule" icon={AiFillSchedule}/>
+            <div className='mt-3 space-x-5 ml-5'>
+                <Button buttonText="Register"
+                  active
+                  icon={AiOutlineUserAdd} />
+                <Button
+                  buttonText="Get Schedule"
+                  icon={AiFillSchedule}
+                />
+            </div>
         </Ul>
     </section>    
   )

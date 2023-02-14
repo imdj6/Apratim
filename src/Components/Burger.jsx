@@ -9,15 +9,14 @@ const StyledBurger = styled.div`
   right: 20px;
   z-index: 20;
   display: none;
-  position: fixed;
 
   @media (max-width: 1300px) {
-    margin-top: 5px;
+    margin-top: 15px;
     display: flex;
     justify-content: space-around;
     flex-flow: column nowrap;
-    padding-right: 40px;
-    position: fixed;
+    margin-right: 0px;
+    padding: 0px;
   }
 
   div {
@@ -49,7 +48,7 @@ const Burger = () => {
   
   return (
     <>
-      <StyledBurger className='mr-14' open={open} onClick={() => setOpen(!open)}>
+      <StyledBurger className='mr-0 ml-0' open={open} onClick={() => setOpen(!open)}>
         <div />
         <div />
         <div />

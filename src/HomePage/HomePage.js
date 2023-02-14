@@ -154,14 +154,14 @@ function HomePage() {
                 </div>
             </section>
             {/* teaser section */}
-            <section data-aos="fade-up" className='container px-2 md:px-20 py-20 relative'>
+            <section data-aos="fade-up" className='px-2 md:px-20 py-20 relative'>
                 {/* triangle watermark starts */}
                 <img src={TriangleWatermark} className="z-[-1] absolute left-[-10vw] top-[-25vh]" alt="" />
                 {/* triangle watermark ends */}
                 <iframe width="560" height="315" className='w-full h-[70vh]' src="https://www.youtube-nocookie.com/embed/rTePr8GptH0?controls=0" title="Apratim" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </section>
             {/* events section */}
-            <section className='container px-2 md:px-20 mb-20 ' id='event-section'>
+            <section className='container px-2 md:px-20 mb-20' id='event-section'>
                 {/* heading */}
                 <div className='mb-10'>
                     <span className='font-poppins text-5xl'>Events</span>
@@ -170,7 +170,7 @@ function HomePage() {
                     {/* smaller line */}
                     <span className='block bg-lineGreen w-20 h-2 rounded-[18px] mt-1'></span>
                 </div>
-                <div className='flex flex-col gap-x-[8.5vw] ml-0 md:ml-20 lg:flex-row px-2 lg:px-0'>
+                <div className='flex flex-col gap-x-[10vw] ml-0 md:ml-20 lg:flex-row px-2 lg:px-0 min-w-max'>
                     <div data-aos="fade-right" className=' relative rounded-[18px] bg-boxCyan p-10 pt-6 w-[85vw] h-[58vh] lg:w-[20vw]  lg:h-[52vh]
                     cursor-pointer'>
                         <img data-aos="fade-right" data-aos-duration="2000" className='absolute top-2 right-[-10vw] lg:right-[-2vw]' src={Technical} alt="Technical events" />
