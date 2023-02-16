@@ -31,7 +31,7 @@ import Login from "../UIComponents/Login";
 import Signup from "../UIComponents/signup";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import ApratimImage from "../assests/main.webp";
+import ApratimImage from "../assests/apratim.webp";
 function HomePage() {
   useEffect(() => {
     Aos.init({ duration: 800 });
@@ -417,7 +417,7 @@ function HomePage() {
           data-aos="fade-right"
           data-aos-duration="2000"
         >
-          Apratim is an annual college festival organized by your institution.
+          Apratim is an annual college festival organized by Our institution.
           It is a celebration of cultural and academic diversity and provides a
           platform for students to showcase their talents and skills. The
           festival typically includes events such as music concerts, dance
