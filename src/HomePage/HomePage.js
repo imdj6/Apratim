@@ -83,22 +83,20 @@ function HomePage() {
           <Signup changeSignupModalState={changeSignupModalState} />
         </Modal>
       )}
-      {/* Mobile responsive nav */}
+      {/* Mobile responsive navbar starts here */}
       <Navbar />
-      {/* Hero section */}
-      <section className="flex">
-        <div className="lg:w-1/2 bg-[#fcfcfc] w-full">
+      {/* Mobile responsive navbar ends here */}
+        {/* Left side banner starts */}
+        <section className="flex">
+          <div className="z-10 flex flex-col justify-center lg:w-1/2 bg-[#fcfcfc] w-full relative">
           {/* Nav Bar */}
-          <div className="hidden lg:ml-5 lg:flex lg:space-x-16 lg:items-center">
+          {/* <div className="hidden lg:ml-5 lg:flex lg:space-x-16 lg:items-center">
             <div className="cursor-pointer">
               <img src={Logo} className="h-24" alt="" />
             </div>
             <div className="cursor-pointer" data-aos="fade-down">
               Schedule
             </div>
-            {/* <Link to={'#event'}>
-                        <div className='cursor-pointer'>Events</div>
-                        </Link> */}
             <div
               className="cursor-pointer"
               data-aos="fade-down"
@@ -116,46 +114,44 @@ function HomePage() {
             >
               Events
             </div>
-          </div>
-          <div className="flex-col mt-5  items-center">
-            {/* <span className='text-4xl mt-14 leading-relaxed p-5  mx-auto bg-polygon1 bg-cover'>So,</span>
-                        <span className='text-4xl mt-14 leading-relaxed p-5 mx-auto'>what are you waiting for?</span>
-                        <p className='text-5xl  tracking-[2px] mx-auto leading-relaxed'>Apratim</p>
-                        <span className='text-4xl  tracking-[2px] leading-relaxed mt-2 mb-2 '>is</span>
-                        <span className='text-4xl  tracking-[2px] leading-relaxed mt-2 mb-2 text-[#8F00FF] bg-Vector bg-cover'> finally </span> */}
+          </div> */}
+          <div className="ml-10">
             <img
               src={Polygon1}
-              className="object-contain z-0 absolute lg:top-24 lg:ml-1 top-14 left-2"
+              className="absolute lg:top-[15vh] lg:w-[10vw] left-[1vw]"
               alt="apratim"
               data-aos="fade-down"
             />
             <img
               src={heading}
               alt="apratim"
-              className="z-20 ml-10 lg:w-[90%] w-80"
+              className="ml-10 lg:w-full w-80"
               data-aos="fade-right"
               data-aos-duration="2000"
             />
             {/* <span className='bg-Polygon2 bg-cover text-4xl p-3 tracking-[2px] leading-relaxed mt-2 mb-2'>here.</span> */}
             <img
               src={Polygon2}
-              className="object-contain z-0 absolute lg:top-96 lg:left-96 top-48 right-24"
+              className="absolute top-[50vh] w-[7vw] left-[30vw]"
               alt="apratim"
               data-aos="fade-up"
             />
           </div>
-          <div className="mt-12 space-x-5 ml-10" data-aos="fade-right">
+          {/* CTA Banner starts here */}
+          <div className="mt-12 space-x-5 ml-20" data-aos="fade-right">
             <Button buttonText="Register" active icon={AiOutlineUserAdd} />
             <Button buttonText="Get Schedule" icon={AiFillSchedule} />
           </div>
-          <div className="hidden lg:inline-flex lg:text-sm lg:ml-10 lg:mt-5 ">
-            Already registered with fun and excitement?{" "}
+          <div className="hidden lg:inline-flex lg:text-[1.35rem] lg:ml-20 lg:mt-5 ">
+            Already registered with fun and excitement?
             <span className="text-[#8F00FF] cursor-pointer ml-1">Login.</span>
           </div>
+          {/* CTA Banner ends here */}
         </div>
-        {/* Call to actions of banner */}
-        <div className="hidden lg:inline-flex lg:w-1/2 bg-[#fffdde] lg:flex-col ">
-          <div
+        {/* Left side banner ends */}
+        {/* right side banner starts here */}
+        <div className="relative z-0 lg:w-1/2 lg:h-screen bg-[#fffdde] ">
+          {/* <div
             className="flex space-x-10 mt-8 justify-end mr-10 mb-10"
             data-aos="fade-down"
           >
@@ -182,18 +178,17 @@ function HomePage() {
                 });
               }}
             />
-          </div>
-          <div>
+          </div> */}
             <img
               src={ApratimImage}
-              className="w-full"
+              className="w-full h-fit absolute top-1/4"
               alt="apratim"
               data-aos="fade-left"
               data-aos-duration="4000"
             />
-          </div>
         </div>
       </section>
+      {/* Right side banner ends here */}
       {/* teaser section */}
       <img
           src={ApratimImage}
