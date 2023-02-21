@@ -142,7 +142,7 @@ function HomePage() {
             <Button buttonText="Register" active icon={AiOutlineUserAdd} />
             <Button buttonText="Get Schedule" icon={AiFillSchedule} />
           </div>
-          <div className="hidden lg:inline-flex lg:text-[1.35rem] lg:ml-20 lg:mt-5 ">
+          <div className="hidden lg:inline-flex lg:text-lg lg:ml-20 lg:mt-5 ">
             Already registered with fun and excitement?
             <span className="text-[#8F00FF] cursor-pointer ml-1">Login.</span>
           </div>
