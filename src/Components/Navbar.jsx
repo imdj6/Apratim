@@ -54,10 +54,10 @@ const Navbar = () => {
 
         <div className={showMediaIcons ? "menu-link mobile-menu-link" : "menu-link"}>
           <ul>
-            <li>Home</li>
-            <li>About</li>
             <li>Schedule</li>
-            <li>Contacts</li>
+            <li>Sponsors</li>
+            <li>Clubs</li>
+            <li>Events</li>
           </ul>
         </div>
 

@@ -39,10 +39,11 @@
 }
 
 .menu-link li:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
   transition: 0.5s;
   cursor: pointer;
   margin-right: 100px;
+  margin-left: 100px;
 }
 
 .social-media {
