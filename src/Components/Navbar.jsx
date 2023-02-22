@@ -1,71 +1,47 @@
-import React from "react";
+import React, { useState } from "react";
+import "./navbar.css";
 import {
-  AiFillYoutube,
-  AiFillInstagram,
-  AiOutlineUserAdd,
-  AiOutlineLogin,
-} from "react-icons/ai";
+    AiOutlineLogin,
+    AiOutlineUserAdd,
+    AiFillSchedule,
+  } from "react-icons/ai";
+import { GiHamburgerMenu } from "react-icons/gi";
+import Logo from "../assests/logo.png";
 import Button from "../UIComponents/Button";
-import styled from "styled-components";
-import Burger from "./Burger";
-import { Navigate, useNavigate } from "react-router-dom";
-import Logo from '../assests/logo.png'
-
-const Nav = styled.nav`
-  width: 100%;
-  height: 55px;
-  padding: 0 0px;
-  display: flex;
-  justify-content: space-between;
-
-  .logo {
-    padding: 15px 0;
-  }
-  
-`;
-
-const Container = styled.div`
-  width: 100%;
-  z-index: 20;
-`;
-
-const Wrapper = styled.section`
-  margin: auto;
-  width: 50%;
-  text-align: center;
-  align-items: center;
-  
-
-  .image {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    margin-top: 5px;
-  }
-`;
 
 const Navbar = () => {
+  const [showMediaIcons, setShowMediaIcons] = useState(false);
   return (
-    <section className="flex justify-between bg-transparent lg:hidden items-center">
-      <Container>
-        <div className="flex mt-2">
-          <div className="pl-3 flex space-x-4 mr-5 w-15 ml-4">
-            <AiFillYoutube color="#762AE2" size={35} />
-            <AiFillInstagram
-              onClick={(e)=>{window.location.href = `https://www.instagram.com/ccetapratim/`}}
-              color="#762AE2"
-              size={35}
-            />
+    <>
+      <nav className="main-nav">
+        <div className="logo">
+            <img className="h-24" src={Logo} alt="" />
+        </div>
+
+        <div className={showMediaIcons ? "menu-link mobile-menu-link" : "menu-link"}>
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Schedule</li>
+            <li>Contacts</li>
+          </ul>
+        </div>
+
+        <div className="social-media">
+          <ul className="social-media-desktop">
+            <li><Button buttonText="Register" active icon={AiOutlineUserAdd} /></li>
+            <li><Button buttonText="Login" icon={AiOutlineLogin} /></li>
+          </ul>
+
+          {/* hamburget menu */}
+          <div className="hamburger-menu">
+            <a href="#" onClick={() => setShowMediaIcons(!showMediaIcons)}>
+              <GiHamburgerMenu />
+            </a>
           </div>
         </div>
-      </Container>
-      <div><Wrapper><img src={Logo} className="image" alt=''/></Wrapper></div>
-
-      <Nav className="z-20">
-        <div className="logo"></div>
-        <Burger />
-      </Nav>
-    </section>
+      </nav>
+    </>
   );
 };
 
