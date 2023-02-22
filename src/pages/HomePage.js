@@ -434,14 +434,14 @@ function HomePage() {
       {/* <section className='relative container mx-auto mb-20 px-2 md:px-20'> */}
 
       {/* </section> */}
-      <div className="flex">
+      {/*<div className="flex">
         <hr className="w-1/2 bg-lineRed h-2 rounded-[18px] mb-1" />
         <hr className="w-1/2 bg-lineGreen h-2 rounded-[18px] mb-1" />
       </div>
       <div className="flex mb-40">
         <hr className="w-1/2 bg-lineGreen h-2 rounded-[18px] mb-10" />
         <hr className="w-1/2 bg-lineRed h-2 rounded-[18px] mb-10" />
-      </div>
+      </div>*/}
 
       {/* schedule section ends */}
     </>
