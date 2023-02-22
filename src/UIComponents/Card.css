@@ -1,0 +1,51 @@
+.card {
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    gap: 6px;
+    padding: 20px;
+    flex-direction: column;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 18px;
+    box-shadow: 0px 4px 18px 3px rgba(0, 0, 0, 0.25);
+    background: #fff;
+}
+.card-img {
+    width: 100%;
+    height: 190px;
+    border-radius: 16px;
+    align-self: center;
+}
+
+.card-heading {
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+.card-para {
+    width: 300px;
+    font-size: 1.2rem;
+}
+
+.card-footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+}
+
+.card-left {
+    color: #7C7C7C;
+    font-size: 1.05rem;
+}
+
+.card-badge {
+    background-color: #8F00FF;
+    color: #fff;
+    font-weight: 600;
+    padding: 0.5vh 1vw;
+    border-radius: 18px;
+}
+
+/* .card-left > div {
+} */

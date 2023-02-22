@@ -8,7 +8,7 @@ import {
 import image from "../../src/assests/Illustration.png";
 import heading from "../assests/heading.png";
 import Logo from "../assests/logo.png";
-import Navbar from "../../src/Components/Navbar.jsx";
+import Navbar from "../Components/Navbar.jsx";
 import Polygon1 from "../assests/Polygon1.png";
 import Polygon2 from "../assests/Polygon2.png";
 // events images
@@ -23,7 +23,6 @@ import Sponsor2 from "../assests/sponsor2.svg";
 import TriangleWatermark from "../assests/triangleWatermark.svg";
 import CircularWatermark from "../assests/circularWatermark.svg";
 import StarWatermark from "../assests/starWatermark.svg";
-import Footer from "../Components/Footer";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import Modal from "../UIComponents/Modal";
@@ -227,7 +226,9 @@ function HomePage() {
           <span className="block bg-lineGreen w-20 h-2 rounded-[18px] mt-1"></span>
         </div>
         <div className="flex flex-col gap-x-[10vw] ml-0 md:ml-20 lg:flex-row px-2 lg:px-0 min-w-max">
-          <div
+          {/* Technical box starts */}
+          <Link
+            to="/events/technical"
             data-aos="fade-right"
             className=" relative rounded-[18px] bg-boxCyan p-10 pt-6 w-[85vw] h-[58vh] lg:w-[20vw]  lg:h-[52vh]
                     cursor-pointer"
@@ -247,7 +248,9 @@ function HomePage() {
             {/* <p className='font-sourceCodePro absolute bottom-[2vh] text-[1.3rem] pr-10'>
                             Events related to programming and hardware.
                         </p> */}
-          </div>
+          </Link>
+          {/* Technical box ends */}
+          {/* Cultural box starts */}
           <div
             data-aos="fade-right"
             className="relative rounded-[18px] bg-boxPink p-10 pt-6 w-[85vw] h-[58vh] lg:w-[20vw] lg:h-[52vh]
@@ -269,6 +272,8 @@ function HomePage() {
                             Lorem ipsum dolor sit amet consectetur.
                         </p> */}
           </div>
+          {/* Cultural box ends */}
+          {/* Literary box starts */}
           <div
             data-aos="fade-right"
             className="relative rounded-[18px] bg-boxBlue p-10 pt-6 w-[85vw] h-[58vh] lg:w-[20vw] lg:h-[52vh]
@@ -290,6 +295,7 @@ function HomePage() {
                             Lorem ipsum dolor sit amet consectetur.
                         </p> */}
           </div>
+          {/* Literary box ends */}
         </div>
       </section>
       {/* circular watermark starts */}
@@ -442,10 +448,6 @@ function HomePage() {
       </div>
 
       {/* schedule section ends */}
-
-      {/* Footer section start */}
-      <Footer />
-      {/* Footer Section end */}
     </>
   );
 }
