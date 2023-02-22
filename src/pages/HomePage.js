@@ -8,7 +8,6 @@ import {
 import image from "../../src/assests/Illustration.png";
 import heading from "../assests/heading.png";
 import Logo from "../assests/logo.png";
-import Navbar from "../Components/Navbar.jsx";
 import Polygon1 from "../assests/Polygon1.png";
 import Polygon2 from "../assests/Polygon2.png";
 // events images
@@ -82,9 +81,6 @@ function HomePage() {
           <Signup changeSignupModalState={changeSignupModalState} />
         </Modal>
       )}
-      {/* Mobile responsive navbar starts here */}
-      <Navbar />
-      {/* Mobile responsive navbar ends here */}
         {/* Left side banner starts */}
         <section className="flex">
           <div className="z-10 flex flex-col justify-center lg:w-1/2 bg-[#fcfcfc] w-full relative">
