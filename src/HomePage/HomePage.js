@@ -7,8 +7,8 @@ import {
 } from "react-icons/ai";
 import image from "../../src/assests/Illustration.png";
 import heading from "../assests/heading.png";
+import Navbar from "../Components/Navbar";
 import Logo from "../assests/logo.png";
-import Navbar from "../../src/Components/Navbar.jsx";
 import Polygon1 from "../assests/Polygon1.png";
 import Polygon2 from "../assests/Polygon2.png";
 // events images
@@ -83,8 +83,8 @@ function HomePage() {
           <Signup changeSignupModalState={changeSignupModalState} />
         </Modal>
       )}
-      {/* Mobile responsive navbar starts here */}
       <Navbar />
+      {/* Mobile responsive navbar starts here */}
       {/* Mobile responsive navbar ends here */}
         {/* Left side banner starts */}
         <section className="flex">
